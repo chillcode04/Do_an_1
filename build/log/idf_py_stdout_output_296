@@ -1,0 +1,327 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:4
+load:0x3fff0030,len:7172
+load:0x40078000,len:15620
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (33) boot: ESP-IDF v5.2.5-dirty 2nd stage bootloader[0m
+[0;32mI (33) boot: compile time Mar 26 2025 23:59:36[0m
+[0;32mI (33) boot: Multicore bootloader[0m
+[0;32mI (38) boot: chip revision: v3.1[0m
+[0;32mI (42) boot.esp32: SPI Speed      : 20MHz[0m
+[0;32mI (47) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (51) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (56) boot: Enabling RNG early entropy source...[0m
+[0;32mI (61) boot: Partition Table:[0m
+[0;32mI (65) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (72) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (79) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (87) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (94) boot: End of partition table[0m
+[0;32mI (98) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=26550h (157008) map[0m
+[0;32mI (179) esp_image: segment 1: paddr=00036578 vaddr=3ffb0000 size=04288h ( 17032) load[0m
+[0;32mI (188) esp_image: segment 2: paddr=0003a808 vaddr=40080000 size=05810h ( 22544) load[0m
+[0;32mI (200) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=acfa0h (708512) map[0m
+[0;32mI (527) esp_image: segment 4: paddr=000ecfc8 vaddr=40085810 size=13a54h ( 80468) load[0m
+[0;32mI (581) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (581) boot: Disabling RNG early entropy source...[0m
+[0;32mI (593) cpu_start: Multicore app[0m
+[0;32mI (603) cpu_start: Pro cpu start user code[0m
+[0;32mI (603) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (603) cpu_start: Application information:[0m
+[0;32mI (606) cpu_start: Project name:     Voice_Assistant_AI[0m
+[0;32mI (612) cpu_start: App version:      1[0m
+[0;32mI (616) cpu_start: Compile time:     Mar 26 2025 23:59:51[0m
+[0;32mI (622) cpu_start: ELF file SHA256:  385eeabdc...[0m
+[0;32mI (628) cpu_start: ESP-IDF:          v5.2.5-dirty[0m
+[0;32mI (633) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (638) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (643) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (648) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (655) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (661) heap_init: At 3FFB8AA0 len 00027560 (157 KiB): DRAM[0m
+[0;32mI (667) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (673) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (680) heap_init: At 40099264 len 00006D9C (27 KiB): IRAM[0m
+[0;32mI (689) spi_flash: detected chip: generic[0m
+[0;32mI (691) spi_flash: flash io: dio[0m
+[0;33mW (694) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (708) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;33mW (716) i2s(legacy): legacy i2s driver is deprecated, please migrate to use driver/i2s_std.h, driver/i2s_pdm.h or driver/i2s_tdm.h[0m
+[0;32mI (729) main_task: Started on CPU0[0m
+[0;32mI (739) main_task: Calling app_main()[0m
+[0;32mI (739) example: Initializing SD card[0m
+[0;32mI (739) gpio: GPIO[5]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (749) sdspi_transaction: cmd=52, R1 response: command not supported[0m
+[0;32mI (789) sdspi_transaction: cmd=5, R1 response: command not supported[0m
+[0;32mI (839) example: Filesystem mounted[0m
+Name: SS08G
+Type: SDHC/SDXC
+Speed: 20.00 MHz (limit: 20.00 MHz)
+Size: 7580MB
+CSD: ver=2, sector_size=512, capacity=15523840 read_bl_len=9
+SSR: bus_width=1
+[0;32mI (889) wifi:wifi driver task: 3ffc7dd0, prio:23, stack:6656, core=0[0m
+[0;32mI (899) wifi:wifi firmware version: 01d22db[0m
+[0;32mI (899) wifi:wifi certification version: v7.0[0m
+[0;32mI (899) wifi:config NVS flash: enabled[0m
+[0;32mI (899) wifi:config nano formating: disabled[0m
+[0;32mI (909) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (909) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (919) wifi:Init management short buffer num: 32[0m
+[0;32mI (919) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (929) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (929) wifi:Init static rx buffer num: 10[0m
+[0;32mI (929) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (939) wifi_init: rx ba win: 6[0m
+[0;32mI (939) wifi_init: tcpip mbox: 32[0m
+[0;32mI (939) wifi_init: udp mbox: 6[0m
+[0;32mI (949) wifi_init: tcp mbox: 6[0m
+[0;32mI (949) wifi_init: tcp tx win: 5760[0m
+[0;32mI (959) wifi_init: tcp rx win: 5760[0m
+[0;32mI (959) wifi_init: tcp mss: 1440[0m
+[0;32mI (959) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (969) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;33mW (969) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (989) phy_init: phy_version 4840,02e0d70,Sep  2 2024,19:39:07[0m
+[0;32mI (1079) wifi:mode : sta (14:2b:2f:c6:47:b4)[0m
+[0;32mI (1079) wifi:enable tsf[0m
+WiFi connecting ... 
+[0;32mI (1089) main_task: Returned from app_main()[0m
+[0;32mI (1099) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1[0m
+[0;32mI (1099) wifi:state: init -> auth (b0)[0m
+[0;32mI (1119) wifi:state: auth -> init (1c0)[0m
+[0;32mI (1129) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1[0m
+WiFi lost connection ... 
+Reconnecting to WiFi... Attempt 1/5
+WiFi lost connection ... 
+Reconnecting to WiFi... Attempt 2/5
+[0;32mI (3569) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1[0m
+[0;32mI (3569) wifi:state: init -> auth (b0)[0m
+[0;32mI (3589) wifi:state: auth -> assoc (0)[0m
+[0;32mI (3659) wifi:state: assoc -> run (10)[0m
+[0;32mI (3679) wifi:connected with NQH, aid = 8, channel 1, BW20, bssid = 5a:35:64:4f:b1:16[0m
+[0;32mI (3679) wifi:security: WPA2-PSK, phy: bgn, rssi: -54[0m
+[0;32mI (3689) wifi:pm start, type: 1[0m
+
+[0;32mI (3689) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+WiFi connected to ap SSID: NQH password: 12345679
+[0;32mI (3719) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us[0m
+[0;32mI (3719) wifi:AP's beacon interval = 102400 us, DTIM period = 2[0m
+[0;32mI (3939) wifi:<ba-add>idx:0 (ifx:0, 5a:35:64:4f:b1:16), tid:0, ssn:1, winSize:64[0m
+[0;32mI (4699) esp_netif_handlers: sta ip: 192.168.75.47, mask: 255.255.255.0, gw: 192.168.75.181[0m
+WiFi got IP ... 
+
+Audio File found, size: 1294380
+Uploading file to server...
+[0;32mI (5279) example: Sent 10240/1294380 bytes[0m
+[0;32mI (5369) example: Sent 20480/1294380 bytes[0m
+[0;32mI (5429) example: Sent 30720/1294380 bytes[0m
+[0;32mI (5519) example: Sent 40960/1294380 bytes[0m
+[0;32mI (5609) example: Sent 51200/1294380 bytes[0m
+[0;32mI (5779) example: Sent 61440/1294380 bytes[0m
+[0;32mI (5859) example: Sent 71680/1294380 bytes[0m
+[0;32mI (5929) example: Sent 81920/1294380 bytes[0m
+[0;32mI (5969) example: Sent 92160/1294380 bytes[0m
+[0;32mI (6019) example: Sent 102400/1294380 bytes[0m
+[0;32mI (6099) example: Sent 112640/1294380 bytes[0m
+[0;32mI (6149) example: Sent 122880/1294380 bytes[0m
+[0;32mI (6199) example: Sent 133120/1294380 bytes[0m
+[0;32mI (6309) example: Sent 143360/1294380 bytes[0m
+[0;32mI (6359) example: Sent 153600/1294380 bytes[0m
+[0;32mI (6409) example: Sent 163840/1294380 bytes[0m
+[0;32mI (6619) example: Sent 174080/1294380 bytes[0m
+[0;32mI (6669) example: Sent 184320/1294380 bytes[0m
+[0;32mI (6729) example: Sent 194560/1294380 bytes[0m
+[0;32mI (6809) example: Sent 204800/1294380 bytes[0m
+[0;32mI (6849) example: Sent 215040/1294380 bytes[0m
+[0;32mI (6919) example: Sent 225280/1294380 bytes[0m
+[0;32mI (6979) example: Sent 235520/1294380 bytes[0m
+[0;32mI (7209) example: Sent 245760/1294380 bytes[0m
+[0;32mI (7259) example: Sent 256000/1294380 bytes[0m
+[0;32mI (7309) example: Sent 266240/1294380 bytes[0m
+[0;32mI (7359) example: Sent 276480/1294380 bytes[0m
+[0;32mI (7429) example: Sent 286720/1294380 bytes[0m
+[0;32mI (7499) example: Sent 296960/1294380 bytes[0m
+[0;32mI (7569) example: Sent 307200/1294380 bytes[0m
+[0;32mI (7619) example: Sent 317440/1294380 bytes[0m
+[0;32mI (7679) example: Sent 327680/1294380 bytes[0m
+[0;32mI (7739) example: Sent 337920/1294380 bytes[0m
+[0;32mI (7869) example: Sent 348160/1294380 bytes[0m
+[0;32mI (7909) example: Sent 358400/1294380 bytes[0m
+[0;32mI (7969) example: Sent 368640/1294380 bytes[0m
+[0;32mI (8029) example: Sent 378880/1294380 bytes[0m
+[0;32mI (8079) example: Sent 389120/1294380 bytes[0m
+[0;32mI (8159) example: Sent 399360/1294380 bytes[0m
+[0;32mI (8209) example: Sent 409600/1294380 bytes[0m
+[0;32mI (8279) example: Sent 419840/1294380 bytes[0m
+[0;32mI (8319) example: Sent 430080/1294380 bytes[0m
+[0;32mI (8649) example: Sent 440320/1294380 bytes[0m
+[0;32mI (8699) example: Sent 450560/1294380 bytes[0m
+[0;32mI (8759) example: Sent 460800/1294380 bytes[0m
+[0;32mI (8809) example: Sent 471040/1294380 bytes[0m
+[0;32mI (8899) example: Sent 481280/1294380 bytes[0m
+[0;32mI (8969) example: Sent 491520/1294380 bytes[0m
+[0;32mI (9029) example: Sent 501760/1294380 bytes[0m
+[0;32mI (9259) example: Sent 512000/1294380 bytes[0m
+[0;32mI (9299) example: Sent 522240/1294380 bytes[0m
+[0;32mI (9349) example: Sent 532480/1294380 bytes[0m
+[0;32mI (9389) example: Sent 542720/1294380 bytes[0m
+[0;32mI (9449) example: Sent 552960/1294380 bytes[0m
+[0;32mI (9509) example: Sent 563200/1294380 bytes[0m
+[0;32mI (9549) example: Sent 573440/1294380 bytes[0m
+[0;32mI (9599) example: Sent 583680/1294380 bytes[0m
+[0;32mI (9699) example: Sent 593920/1294380 bytes[0m
+[0;32mI (9899) example: Sent 604160/1294380 bytes[0m
+[0;32mI (10029) example: Sent 614400/1294380 bytes[0m
+[0;32mI (10079) example: Sent 624640/1294380 bytes[0m
+[0;32mI (10139) example: Sent 634880/1294380 bytes[0m
+[0;32mI (10189) example: Sent 645120/1294380 bytes[0m
+[0;32mI (10239) example: Sent 655360/1294380 bytes[0m
+[0;32mI (10299) example: Sent 665600/1294380 bytes[0m
+[0;32mI (10349) example: Sent 675840/1294380 bytes[0m
+[0;32mI (10489) example: Sent 686080/1294380 bytes[0m
+[0;32mI (10559) example: Sent 696320/1294380 bytes[0m
+[0;32mI (10619) example: Sent 706560/1294380 bytes[0m
+[0;32mI (10689) example: Sent 716800/1294380 bytes[0m
+[0;32mI (10739) example: Sent 727040/1294380 bytes[0m
+[0;32mI (10809) example: Sent 737280/1294380 bytes[0m
+[0;32mI (10859) example: Sent 747520/1294380 bytes[0m
+[0;32mI (10949) example: Sent 757760/1294380 bytes[0m
+[0;32mI (11009) example: Sent 768000/1294380 bytes[0m
+[0;32mI (11309) example: Sent 778240/1294380 bytes[0m
+[0;32mI (11379) example: Sent 788480/1294380 bytes[0m
+[0;32mI (11459) example: Sent 798720/1294380 bytes[0m
+[0;32mI (11509) example: Sent 808960/1294380 bytes[0m
+[0;32mI (11559) example: Sent 819200/1294380 bytes[0m
+[0;32mI (11619) example: Sent 829440/1294380 bytes[0m
+[0;32mI (11929) example: Sent 839680/1294380 bytes[0m
+[0;32mI (11979) example: Sent 849920/1294380 bytes[0m
+[0;32mI (12029) example: Sent 860160/1294380 bytes[0m
+[0;32mI (12079) example: Sent 870400/1294380 bytes[0m
+[0;32mI (12139) example: Sent 880640/1294380 bytes[0m
+[0;32mI (12189) example: Sent 890880/1294380 bytes[0m
+[0;32mI (12239) example: Sent 901120/1294380 bytes[0m
+[0;32mI (12289) example: Sent 911360/1294380 bytes[0m
+[0;32mI (12529) example: Sent 921600/1294380 bytes[0m
+[0;32mI (12589) example: Sent 931840/1294380 bytes[0m
+[0;32mI (12649) example: Sent 942080/1294380 bytes[0m
+[0;32mI (12689) example: Sent 952320/1294380 bytes[0m
+[0;32mI (12739) example: Sent 962560/1294380 bytes[0m
+[0;32mI (12789) example: Sent 972800/1294380 bytes[0m
+[0;32mI (12839) example: Sent 983040/1294380 bytes[0m
+[0;32mI (12889) example: Sent 993280/1294380 bytes[0m
+[0;32mI (12949) example: Sent 1003520/1294380 bytes[0m
+[0;32mI (13169) example: Sent 1013760/1294380 bytes[0m
+[0;32mI (13209) example: Sent 1024000/1294380 bytes[0m
+[0;32mI (13269) example: Sent 1034240/1294380 bytes[0m
+[0;32mI (13319) example: Sent 1044480/1294380 bytes[0m
+[0;32mI (13379) example: Sent 1054720/1294380 bytes[0m
+[0;32mI (13429) example: Sent 1064960/1294380 bytes[0m
+[0;32mI (13469) example: Sent 1075200/1294380 bytes[0m
+[0;32mI (13519) example: Sent 1085440/1294380 bytes[0m
+[0;32mI (13579) example: Sent 1095680/1294380 bytes[0m
+[0;32mI (13619) example: Sent 1105920/1294380 bytes[0m
+[0;32mI (13819) example: Sent 1116160/1294380 bytes[0m
+[0;32mI (13849) example: Sent 1126400/1294380 bytes[0m
+[0;32mI (13909) example: Sent 1136640/1294380 bytes[0m
+[0;32mI (13979) example: Sent 1146880/1294380 bytes[0m
+[0;32mI (14029) example: Sent 1157120/1294380 bytes[0m
+[0;32mI (14079) example: Sent 1167360/1294380 bytes[0m
+[0;32mI (14139) example: Sent 1177600/1294380 bytes[0m
+[0;32mI (14179) example: Sent 1187840/1294380 bytes[0m
+[0;32mI (14239) example: Sent 1198080/1294380 bytes[0m
+[0;32mI (14379) example: Sent 1208320/1294380 bytes[0m
+[0;32mI (14459) example: Sent 1218560/1294380 bytes[0m
+[0;32mI (14519) example: Sent 1228800/1294380 bytes[0m
+[0;32mI (14579) example: Sent 1239040/1294380 bytes[0m
+[0;32mI (14629) example: Sent 1249280/1294380 bytes[0m
+[0;32mI (14689) example: Sent 1259520/1294380 bytes[0m
+[0;32mI (14739) example: Sent 1269760/1294380 bytes[0m
+[0;32mI (14789) example: Sent 1280000/1294380 bytes[0m
+[0;32mI (14839) example: Sent 1290240/1294380 bytes[0m
+[0;32mI (14859) example: Sent 1294380/1294380 bytes[0m
+SERVER_RESPONE:
+ ==================== Transcription ====================
+Tuyệt vời, đây là kết quả xử lý file audio phỏng vấn theo yêu cầu của bạn:
+
+**1-4. Transcript Cuộc Phỏng Vấn**
+
+**Phóng viên:** ...toàn thể người hâm mộ đá Việt Nam. Ngày hôm nay khi mà Thái Lan có một cái bàn thắng mà chúng ta thấy không fair play, lúc đấy tinh thần của đội đã bị ảnh hưởng như thế nào và trong thời kỳ nghỉ, huấn luyện viên Park Hang Seo đã nói gì chúng ta để lấy lại tinh thần?
+**Cầu thủ:** Ờ, Đức nghĩ bàn thắng đấy là một bàn thắng không fair play đến từ các cầu thủ Thái Lan, nhưng mà đấy là trong bóng đá. Và như mọi người đã thấy, những phút còn lại toàn đội đã chơi một cách rất kiên cường và đã có được hai bàn thắng và giành được chức vô địch ở trên, ngay trên đất sân Thái Lan.
+**Phóng viên:** Câu hỏi cuối cùng, nói gì... à Đức nói gì về cái hành trình của chúng ta ở giải đấu lần này?
+**Cầu thủ:** Ờ, từ trận đấu [đầu tiên] cho đến trận cuối thì gặp rất nhiều khó khăn và Đức và các đồng đội đã cố gắng hết mình để đến được trận đấu ngày hôm nay và kết quả cuối cùng như mọi người đã thấy là giành được chức vô địch.
+**Phóng viên:** Cảm ơn Đức và chúc mừng đội tuyển của Việt Nam đã có được chức vô địch.
+
+**5. Tóm Tắt Ý Chính Cuộc Phỏng Vấn**
+
+Cuộc phỏng vấn ngắn với cầu thủ (được gọi là Đức) tập trung vào cảm xúc và góc nhìn của anh sau một trận đấu quan trọng (dường như là trận chung kết với Thái Lan mà Việt Nam giành chiến thắng).
+
+*   **Về bàn thắng gây tranh cãi của Thái Lan:** Cầu thủ Đức thừa nhận bàn thắng đó là "không fair play" nhưng cũng chấp nhận nó như một phần của bóng đá ("nhưng mà đấy là trong bóng đá").
+*   **Tinh thần của đội sau bàn thua:** Anh nhấn mạnh sự kiên cường của toàn đội sau tình huống đó. Thay vì bị ảnh hưởng tiêu cực, đội đã chiến đấu mạnh mẽ hơn. Anh nói: "...những phút còn lại toàn đội đã chơi một cách rất kiên cường và đã có được hai bàn thắng và giành được chức vô địch ở trên, ngay trên đất sân Thái Lan."
+*   **Về hành trình tại giải đấu:** Đức chia sẻ rằng đội đã đối mặt với nhiều thử thách trong suốt giải đấu ("từ trận đấu [đầu tiên] cho đến trận cuối thì gặp rất nhiều khó khăn").
+*   **Nỗ lực và thành quả:** Anh khẳng định toàn đội đã nỗ lực hết sức ("Đức và các đồng đội đã cố gắng hết mình") và thành quả cuối cùng là chức vô địch xứng đáng ("kết quả cuối cùng như mọi người đã thấy là giành được chức vô địch").
+
+**6. Bài Báo Chuyên Nghiệp**
+
+**Phan Văn Đức: "Bàn Thắng Không Fair Play Là Một Phần Bóng Đá, Chúng Tôi Đáp Trả Bằng Sự Kiên Cường"**
+
+*Hà Nội, [Ngày tháng năm] -* Sau chiến thắng nghẹt thở và đầy cảm xúc trước đối thủ truyền kiếp Thái Lan ngay trên sân khách để giành chức vô địch [Tên giải đấu - giả định], tiền vệ Phan Văn Đức đã có những chia sẻ thẳng thắn về khoảnh khắc gây tranh cãi và hành trình đầy thử thách của đội tuyển Việt Nam. Những lời tâm sự ngắn gọn nhưng đầy bản lĩnh của anh khắc họa rõ nét tinh thần thép và sự trưởng thành của "Những chiến binh Sao Vàng".
+
+Trận chung kết lượt về [Tên giải đấu] đã diễn ra với kịch tính được đẩy lên cao độ. Bên cạnh những pha bóng đẹp mắt và cuộc rượt đuổi tỷ số hấp dẫn, một tình huống đã gây ra nhiều tranh cãi khi đội chủ nhà Thái Lan có bàn thắng trong một pha bóng bị nhiều người đánh giá là thiếu tinh thần thể thao (fair play). Bàn thắng này đến vào thời điểm nhạy cảm, có khả năng ảnh hưởng lớn đến tâm lý thi đấu của các cầu thủ Việt Nam.
+
+Khi được hỏi về tác động của bàn thua gây tranh cãi này và liệu HLV Park Hang Seo đã có những chỉ đạo gì đặc biệt trong giờ nghỉ, Phan Văn Đức đã thể hiện một góc nhìn chuyên nghiệp và đầy thực tế. "Ờ, Đức nghĩ bàn thắng đấy là một bàn thắng không fair play đến từ các cầu thủ Thái Lan," anh thừa nhận sự thiếu fair play trong tình huống đó. Tuy nhiên, thay vì tập trung vào sự bất bình, anh lập tức nhấn mạnh bản chất khó lường của môn thể thao vua: "nhưng mà đấy là trong bóng đá."
+
+Câu trả lời này cho thấy sự bình tĩnh và chấp nhận của một cầu thủ chuyên nghiệp trước những tình huống ngoài ý muốn. Quan trọng hơn, Đức không để sự việc đó làm lu mờ màn trình diễn quả cảm sau đó của toàn đội. Anh tự hào chia sẻ: "Và như mọi người đã thấy, những phút còn lại toàn đội đã chơi một cách rất kiên cường và đã có được hai bàn thắng và giành được chức vô địch ở trên, ngay trên 
+====================      End      ====================
+Saved file /phongvan.txt
+[0;32mI (53839) smtp_example: Seeding the random number generator[0m
+[0;32mI (53839) example: HTTP POST Status = 200[0m
+[0;32mI (53849) smtp_example: Loading the CA root certificate...[0m
+[0;32mI (53859) smtp_example: Setting hostname for TLS session...[0m
+[0;32mI (53869) smtp_example: Setting up the SSL/TLS structure...[0m
+[0;32mI (53869) smtp_example: Connecting to smtp.googlemail.com:587...[0m
+[0;32mI (54109) wifi:<ba-add>idx:1 (ifx:0, 5a:35:64:4f:b1:16), tid:1, ssn:0, winSize:64[0m
+[0;32mI (54109) smtp_example: Connected.[0m
+
+220 smtp.googlemail.com ESMTP d9443c01a7336-2291f1dcf91sm12399285ad.167 - gsmtp
+[0;32mI (54929) smtp_example: Writing EHLO to server...[0m
+
+250-smtp.googlemail.com at your service, [113.185.48.180]
+250-SIZE 35882577
+250-8BITMIME
+250-STARTTLS
+250-ENHANCEDSTATUSCOD
+ES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+[0;32mI (55139) smtp_example: Writing STARTTLS to server...[0m
+
+220 2.0.0 Ready to start TLS
+[0;32mI (55359) smtp_example: Performing the SSL/TLS handshake...[0m
+[0;32mI (58009) smtp_example: Verifying peer X.509 certificate...[0m
+[0;33mW (58009) smtp_example: Failed to verify peer certificate![0m
+[0;33mW (58009) smtp_example: verification info:   ! The certificate is not correctly signed by the trusted CA
+[0m
+[0;32mI (58019) smtp_example: Cipher suite is TLS-ECDHE-ECDSA-WITH-AES-128-GCM-SHA256[0m
+File /sdcard/phongvan.wav found, size: 1294380
+File /sdcard/phongvan.txt found, size: 5639
+[0;32mI (58039) smtp_example: Authentication...[0m
+[0;32mI (58049) smtp_example: Write AUTH LOGIN[0m
+[0;32mI (58249) smtp_example: Write USER NAME[0m
+[0;32mI (58439) smtp_example: Write PASSWORD[0m
+[0;32mI (59029) smtp_example: Write MAIL FROM[0m
+[0;32mI (59439) smtp_example: Write RCPT[0m
+[0;32mI (59649) smtp_example: Write DATA[0m
+[0;32mI (60049) smtp_example: Write Content[0m
+Total bytes read for text file: 5639
+Total bytes read for audio file: 1294380
+[0;32mI (145449) smtp_example: Email sent![0m
+

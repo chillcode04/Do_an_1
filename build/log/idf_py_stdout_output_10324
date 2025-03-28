@@ -1,0 +1,232 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:4
+load:0x3fff0030,len:7172
+load:0x40078000,len:15620
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (33) boot: ESP-IDF v5.2.5-dirty 2nd stage bootloader[0m
+[0;32mI (33) boot: compile time Mar 26 2025 23:59:36[0m
+[0;32mI (33) boot: Multicore bootloader[0m
+[0;32mI (38) boot: chip revision: v3.1[0m
+[0;32mI (42) boot.esp32: SPI Speed      : 20MHz[0m
+[0;32mI (47) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (51) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (56) boot: Enabling RNG early entropy source...[0m
+[0;32mI (61) boot: Partition Table:[0m
+[0;32mI (65) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (72) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (79) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (87) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (94) boot: End of partition table[0m
+[0;32mI (98) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=224d8h (140504) map[0m
+[0;32mI (172) esp_image: segment 1: paddr=00032500 vaddr=3ffb0000 size=04288h ( 17032) load[0m
+[0;32mI (180) esp_image: segment 2: paddr=00036790 vaddr=40080000 size=09888h ( 39048) load[0m
+[0;32mI (201) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=aa820h (698400) map[0m
+[0;32mI (523) esp_image: segment 4: paddr=000ea848 vaddr=40089888 size=0f9dch ( 63964) load[0m
+[0;32mI (569) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (569) boot: Disabling RNG early entropy source...[0m
+[0;32mI (580) cpu_start: Multicore app[0m
+[0;32mI (591) cpu_start: Pro cpu start user code[0m
+[0;32mI (591) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (591) cpu_start: Application information:[0m
+[0;32mI (594) cpu_start: Project name:     Voice_Assistant_AI[0m
+[0;32mI (600) cpu_start: App version:      1[0m
+[0;32mI (604) cpu_start: Compile time:     Mar 26 2025 23:59:51[0m
+[0;32mI (610) cpu_start: ELF file SHA256:  c0a55d99b...[0m
+[0;32mI (615) cpu_start: ESP-IDF:          v5.2.5-dirty[0m
+[0;32mI (621) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (626) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (630) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (636) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (643) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (648) heap_init: At 3FFB8A60 len 000275A0 (157 KiB): DRAM[0m
+[0;32mI (655) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (661) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (667) heap_init: At 40099264 len 00006D9C (27 KiB): IRAM[0m
+[0;32mI (676) spi_flash: detected chip: generic[0m
+[0;32mI (678) spi_flash: flash io: dio[0m
+[0;33mW (682) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (696) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;33mW (704) i2s(legacy): legacy i2s driver is deprecated, please migrate to use driver/i2s_std.h, driver/i2s_pdm.h or driver/i2s_tdm.h[0m
+[0;32mI (717) main_task: Started on CPU0[0m
+[0;32mI (727) main_task: Calling app_main()[0m
+[0;32mI (727) example: Initializing SD card[0m
+[0;32mI (727) gpio: GPIO[5]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (777) sdspi_transaction: cmd=5, R1 response: command not supported[0m
+[0;32mI (967) example: Filesystem mounted[0m
+Name: SS08G
+Type: SDHC/SDXC
+Speed: 20.00 MHz (limit: 20.00 MHz)
+Size: 7580MB
+CSD: ver=2, sector_size=512, capacity=15523840 read_bl_len=9
+SSR: bus_width=1
+[0;32mI (1017) wifi:wifi driver task: 3ffc7d90, prio:23, stack:6656, core=0[0m
+[0;32mI (1027) wifi:wifi firmware version: 01d22db[0m
+[0;32mI (1027) wifi:wifi certification version: v7.0[0m
+[0;32mI (1037) wifi:config NVS flash: enabled[0m
+[0;32mI (1037) wifi:config nano formating: disabled[0m
+[0;32mI (1037) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (1037) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (1047) wifi:Init management short buffer num: 32[0m
+[0;32mI (1047) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (1057) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (1057) wifi:Init static rx buffer num: 10[0m
+[0;32mI (1067) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (1067) wifi_init: rx ba win: 6[0m
+[0;32mI (1067) wifi_init: tcpip mbox: 32[0m
+[0;32mI (1077) wifi_init: udp mbox: 6[0m
+[0;32mI (1077) wifi_init: tcp mbox: 6[0m
+[0;32mI (1077) wifi_init: tcp tx win: 5760[0m
+[0;32mI (1087) wifi_init: tcp rx win: 5760[0m
+[0;32mI (1087) wifi_init: tcp mss: 1440[0m
+[0;32mI (1097) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (1097) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;33mW (1107) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (1117) phy_init: phy_version 4840,02e0d70,Sep  2 2024,19:39:07[0m
+[0;32mI (1207) wifi:mode : sta (14:2b:2f:c6:47:b4)[0m
+[0;32mI (1217) wifi:enable tsf[0m
+[0;32mI (1217) main_task: Returned from app_main()[0m
+WiFi connecting ... 
+[0;32mI (1237) wifi:new:<11,0>, old:<1,0>, ap:<255,255>, sta:<11,0>, prof:1[0m
+[0;32mI (1237) wifi:state: init -> auth (b0)[0m
+[0;32mI (1257) wifi:state: auth -> assoc (0)[0m
+[0;32mI (1297) wifi:state: assoc -> run (10)[0m
+[0;32mI (1317) wifi:connected with NQH, aid = 1, channel 11, BW20, bssid = 72:d2:f3:73:7b:67[0m
+[0;32mI (1317) wifi:security: WPA2-PSK, phy: bgn, rssi: -51[0m
+[0;32mI (1327) wifi:pm start, type: 1[0m
+
+[0;32mI (1327) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+WiFi connected to ap SSID: NQH password: 12345679
+[0;32mI (1357) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us[0m
+[0;32mI (1357) wifi:AP's beacon interval = 102400 us, DTIM period = 2[0m
+[0;32mI (1367) wifi:<ba-add>idx:0 (ifx:0, 72:d2:f3:73:7b:67), tid:0, ssn:1, winSize:64[0m
+[0;32mI (2337) esp_netif_handlers: sta ip: 192.168.75.47, mask: 255.255.255.0, gw: 192.168.75.181[0m
+WiFi got IP ... 
+
+[0;31mE (2337) example: Failed to open file /sdcard/phongvan_40s.wav: Invalid argument[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:4
+load:0x3fff0030,len:7172
+load:0x40078000,len:15620
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (33) boot: ESP-IDF v5.2.5-dirty 2nd stage bootloader[0m
+[0;32mI (33) boot: compile time Mar 26 2025 23:59:36[0m
+[0;32mI (33) boot: Multicore bootloader[0m
+[0;32mI (38) boot: chip revision: v3.1[0m
+[0;32mI (42) boot.esp32: SPI Speed      : 20MHz[0m
+[0;32mI (47) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (51) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (56) boot: Enabling RNG early entropy source...[0m
+[0;32mI (61) boot: Partition Table:[0m
+[0;32mI (65) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (72) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (79) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (87) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (94) boot: End of partition table[0m
+[0;32mI (98) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=224d8h (140504) map[0m
+[0;32mI (172) esp_image: segment 1: paddr=00032500 vaddr=3ffb0000 size=04288h ( 17032) load[0m
+[0;32mI (180) esp_image: segment 2: paddr=00036790 vaddr=40080000 size=09888h ( 39048) load[0m
+[0;32mI (201) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=aa820h (698400) map[0m
+[0;32mI (523) esp_image: segment 4: paddr=000ea848 vaddr=40089888 size=0f9dch ( 63964) load[0m
+[0;32mI (569) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (569) boot: Disabling RNG early entropy source...[0m
+[0;32mI (580) cpu_start: Multicore app[0m
+[0;32mI (591) cpu_start: Pro cpu start user code[0m
+[0;32mI (591) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (591) cpu_start: Application information:[0m
+[0;32mI (594) cpu_start: Project name:     Voice_Assistant_AI[0m
+[0;32mI (600) cpu_start: App version:      1[0m
+[0;32mI (604) cpu_start: Compile time:     Mar 26 2025 23:59:51[0m
+[0;32mI (610) cpu_start: ELF file SHA256:  c0a55d99b...[0m
+[0;32mI (615) cpu_start: ESP-IDF:          v5.2.5-dirty[0m
+[0;32mI (621) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (626) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (630) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (636) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (643) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (648) heap_init: At 3FFB8A60 len 000275A0 (157 KiB): DRAM[0m
+[0;32mI (655) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (661) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (667) heap_init: At 40099264 len 00006D9C (27 KiB): IRAM[0m
+[0;32mI (676) spi_flash: detected chip: generic[0m
+[0;32mI (678) spi_flash: flash io: dio[0m
+[0;33mW (682) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (696) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;33mW (704) i2s(legacy): legacy i2s driver is deprecated, please migrate to use driver/i2s_std.h, driver/i2s_pdm.h or driver/i2s_tdm.h[0m
+[0;32mI (717) main_task: Started on CPU0[0m
+[0;32mI (727) main_task: Calling app_main()[0m
+[0;32mI (727) example: Initializing SD card[0m
+[0;32mI (727) gpio: GPIO[5]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (777) sdspi_transaction: cmd=5, R1 response: command not supported[0m
+[0;32mI (967) example: Filesystem mounted[0m
+Name: SS08G
+Type: SDHC/SDXC
+Speed: 20.00 MHz (limit: 20.00 MHz)
+Size: 7580MB
+CSD: ver=2, sector_size=512, capacity=15523840 read_bl_len=9
+SSR: bus_width=1
+[0;32mI (1017) wifi:wifi driver task: 3ffc7d90, prio:23, stack:6656, core=0[0m
+[0;32mI (1027) wifi:wifi firmware version: 01d22db[0m
+[0;32mI (1027) wifi:wifi certification version: v7.0[0m
+[0;32mI (1037) wifi:config NVS flash: enabled[0m
+[0;32mI (1037) wifi:config nano formating: disabled[0m
+[0;32mI (1037) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (1037) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (1047) wifi:Init management short buffer num: 32[0m
+[0;32mI (1047) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (1057) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (1057) wifi:Init static rx buffer num: 10[0m
+[0;32mI (1067) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (1067) wifi_init: rx ba win: 6[0m
+[0;32mI (1067) wifi_init: tcpip mbox: 32[0m
+[0;32mI (1077) wifi_init: udp mbox: 6[0m
+[0;32mI (1077) wifi_init: tcp mbox: 6[0m
+[0;32mI (1077) wifi_init: tcp tx win: 5760[0m
+[0;32mI (1087) wifi_init: tcp rx win: 5760[0m
+[0;32mI (1087) wifi_init: tcp mss: 1440[0m
+[0;32mI (1097) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (1097) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;33mW (1107) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (1117) phy_init: phy_version 4840,02e0d70,Sep  2 2024,19:39:07[0m
+[0;32mI (1207) wifi:mode : sta (14:2b:2f:c6:47:b4)[0m
+[0;32mI (1217) wifi:enable tsf[0m
+[0;32mI (1227) main_task: Returned from app_main()[0m
+WiFi connecting ... 
+[0;32mI (1237) wifi:new:<11,0>, old:<1,0>, ap:<255,255>, sta:<11,0>, prof:1[0m
+[0;32mI (1237) wifi:state: init -> auth (b0)[0m
+[0;32mI (1257) wifi:state: auth -> init (1c0)[0m
+[0;32mI (1267) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1[0m
+WiFi lost connection ... 
+Reconnecting to WiFi... Attempt 1/5
+WiFi lost connection ... 
+Reconnecting to WiFi... Attempt 2/5
+[0;32mI (3707) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1[0m
+[0;32mI (3707) wifi:state: init -> auth (b0)[0m
+[0;32mI (3727) wifi:state: auth -> assoc (0)[0m
+[0;32mI (3797) wifi:state: assoc -> run (10)[0m
+[0;32mI (3817) wifi:connected with NQH, aid = 2, channel 11, BW20, bssid = 72:d2:f3:73:7b:67[0m
+[0;32mI (3817) wifi:security: WPA2-PSK, phy: bgn, rssi: -45[0m
+[0;32mI (3827) wifi:pm start, type: 1[0m
+
+[0;32mI (3827) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+WiFi connected to ap SSID: NQH password: 12345679
+[0;32mI (3857) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us[0m
+[0;32mI (3857) wifi:AP's beacon interval = 102400 us, DTIM period = 2[0m
+[0;32mI (3877) wifi:<ba-add>idx:0 (ifx:0, 72:d2:f3:73:7b:67), tid:0, ssn:1, winSize:64[0m
+[0;32mI (4837) esp_netif_handlers: sta ip: 192.168.75.47, mask: 255.255.255.0, gw: 192.168.75.181[0m
+WiFi got IP ... 
+
+[0;31mE (4837) example: Failed to open file /sdcard/phongvan_40s.wav: Invalid argument[0m

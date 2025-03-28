@@ -1,0 +1,13 @@
+# Target labels
+ bootloader
+# Source files and their labels
+C:/Espressif/Voice_Assistant_AI/build/CMakeFiles/bootloader
+C:/Espressif/Voice_Assistant_AI/build/CMakeFiles/bootloader.rule
+C:/Espressif/Voice_Assistant_AI/build/CMakeFiles/bootloader-complete.rule
+C:/Espressif/Voice_Assistant_AI/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule
+C:/Espressif/Voice_Assistant_AI/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule
+C:/Espressif/Voice_Assistant_AI/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule
+C:/Espressif/Voice_Assistant_AI/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule
+C:/Espressif/Voice_Assistant_AI/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule
+C:/Espressif/Voice_Assistant_AI/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule
+C:/Espressif/Voice_Assistant_AI/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule

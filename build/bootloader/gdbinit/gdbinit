@@ -1,0 +1,2 @@
+source C:/Espressif/Voice_Assistant_AI/build/bootloader/gdbinit/symbols
+source C:/Espressif/Voice_Assistant_AI/build/bootloader/gdbinit/connect

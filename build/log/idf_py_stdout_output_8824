@@ -1,0 +1,251 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:4
+load:0x3fff0030,len:7172
+load:0x40078000,len:15620
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (33) boot: ESP-IDF v5.2.5-dirty 2nd stage bootloader[0m
+[0;32mI (33) boot: compile time Mar 26 2025 23:59:36[0m
+[0;32mI (33) boot: Multicore bootloader[0m
+[0;32mI (38) boot: chip revision: v3.1[0m
+[0;32mI (42) boot.esp32: SPI Speed      : 20MHz[0m
+[0;32mI (47) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (51) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (56) boot: Enabling RNG early entropy source...[0m
+[0;32mI (61) boot: Partition Table:[0m
+[0;32mI (65) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (72) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (79) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (87) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (94) boot: End of partition table[0m
+[0;32mI (98) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=26550h (157008) map[0m
+[0;32mI (179) esp_image: segment 1: paddr=00036578 vaddr=3ffb0000 size=04288h ( 17032) load[0m
+[0;32mI (188) esp_image: segment 2: paddr=0003a808 vaddr=40080000 size=05810h ( 22544) load[0m
+[0;32mI (200) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=acfa4h (708516) map[0m
+[0;32mI (527) esp_image: segment 4: paddr=000ecfcc vaddr=40085810 size=13a54h ( 80468) load[0m
+[0;32mI (581) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (581) boot: Disabling RNG early entropy source...[0m
+[0;32mI (593) cpu_start: Multicore app[0m
+[0;32mI (603) cpu_start: Pro cpu start user code[0m
+[0;32mI (603) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (603) cpu_start: Application information:[0m
+[0;32mI (606) cpu_start: Project name:     Voice_Assistant_AI[0m
+[0;32mI (612) cpu_start: App version:      1[0m
+[0;32mI (616) cpu_start: Compile time:     Mar 26 2025 23:59:51[0m
+[0;32mI (622) cpu_start: ELF file SHA256:  acca3a21e...[0m
+[0;32mI (628) cpu_start: ESP-IDF:          v5.2.5-dirty[0m
+[0;32mI (633) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (638) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (643) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (648) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (655) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (661) heap_init: At 3FFB8AA0 len 00027560 (157 KiB): DRAM[0m
+[0;32mI (667) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (673) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (680) heap_init: At 40099264 len 00006D9C (27 KiB): IRAM[0m
+[0;32mI (689) spi_flash: detected chip: generic[0m
+[0;32mI (691) spi_flash: flash io: dio[0m
+[0;33mW (694) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (708) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;33mW (716) i2s(legacy): legacy i2s driver is deprecated, please migrate to use driver/i2s_std.h, driver/i2s_pdm.h or driver/i2s_tdm.h[0m
+[0;32mI (729) main_task: Started on CPU0[0m
+[0;32mI (739) main_task: Calling app_main()[0m
+[0;32mI (739) example: Initializing SD card[0m
+[0;32mI (739) gpio: GPIO[5]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (749) sdspi_transaction: cmd=52, R1 response: command not supported[0m
+[0;32mI (789) sdspi_transaction: cmd=5, R1 response: command not supported[0m
+[0;32mI (839) example: Filesystem mounted[0m
+Name: SS08G
+Type: SDHC/SDXC
+Speed: 20.00 MHz (limit: 20.00 MHz)
+Size: 7580MB
+CSD: ver=2, sector_size=512, capacity=15523840 read_bl_len=9
+SSR: bus_width=1
+[0;32mI (889) wifi:wifi driver task: 3ffc7dd0, prio:23, stack:6656, core=0[0m
+[0;32mI (899) wifi:wifi firmware version: 01d22db[0m
+[0;32mI (899) wifi:wifi certification version: v7.0[0m
+[0;32mI (899) wifi:config NVS flash: enabled[0m
+[0;32mI (899) wifi:config nano formating: disabled[0m
+[0;32mI (909) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (909) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (919) wifi:Init management short buffer num: 32[0m
+[0;32mI (919) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (929) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (929) wifi:Init static rx buffer num: 10[0m
+[0;32mI (929) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (939) wifi_init: rx ba win: 6[0m
+[0;32mI (939) wifi_init: tcpip mbox: 32[0m
+[0;32mI (939) wifi_init: udp mbox: 6[0m
+[0;32mI (949) wifi_init: tcp mbox: 6[0m
+[0;32mI (949) wifi_init: tcp tx win: 5760[0m
+[0;32mI (959) wifi_init: tcp rx win: 5760[0m
+[0;32mI (959) wifi_init: tcp mss: 1440[0m
+[0;32mI (959) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (969) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;33mW (969) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (989) phy_init: phy_version 4840,02e0d70,Sep  2 2024,19:39:07[0m
+[0;32mI (1079) wifi:mode : sta (14:2b:2f:c6:47:b4)[0m
+[0;32mI (1079) wifi:enable tsf[0m
+[0;32mI (1089) main_task: Returned from app_main()[0m
+WiFi connecting ... 
+[0;32mI (1099) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1[0m
+[0;32mI (1099) wifi:state: init -> auth (b0)[0m
+[0;32mI (1119) wifi:state: auth -> init (1c0)[0m
+[0;32mI (1129) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1[0m
+WiFi lost connection ... 
+Reconnecting to WiFi... Attempt 1/5
+WiFi lost connection ... 
+Reconnecting to WiFi... Attempt 2/5
+[0;32mI (3569) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1[0m
+[0;32mI (3579) wifi:state: init -> auth (b0)[0m
+[0;32mI (3599) wifi:state: auth -> assoc (0)[0m
+[0;32mI (3639) wifi:state: assoc -> run (10)[0m
+[0;32mI (3669) wifi:connected with NQH, aid = 3, channel 1, BW20, bssid = 5a:35:64:4f:b1:16[0m
+[0;32mI (3669) wifi:security: WPA2-PSK, phy: bgn, rssi: -52[0m
+[0;32mI (3669) wifi:pm start, type: 1[0m
+
+[0;32mI (3669) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+WiFi connected to ap SSID: NQH password: 12345679
+[0;32mI (3689) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us[0m
+[0;32mI (3689) wifi:AP's beacon interval = 102400 us, DTIM period = 2[0m
+[0;32mI (3719) wifi:<ba-add>idx:0 (ifx:0, 5a:35:64:4f:b1:16), tid:0, ssn:1, winSize:64[0m
+[0;32mI (4689) esp_netif_handlers: sta ip: 192.168.75.47, mask: 255.255.255.0, gw: 192.168.75.181[0m
+WiFi got IP ... 
+
+Audio File found, size: 1294380
+Uploading file to server...
+[0;32mI (5009) example: Sent 10240/1294380 bytes[0m
+[0;32mI (5079) example: Sent 20480/1294380 bytes[0m
+[0;32mI (5129) example: Sent 30720/1294380 bytes[0m
+[0;32mI (5189) example: Sent 40960/1294380 bytes[0m
+[0;32mI (5249) example: Sent 51200/1294380 bytes[0m
+[0;32mI (5309) example: Sent 61440/1294380 bytes[0m
+[0;32mI (5359) example: Sent 71680/1294380 bytes[0m
+[0;32mI (5409) example: Sent 81920/1294380 bytes[0m
+[0;32mI (5489) example: Sent 92160/1294380 bytes[0m
+[0;32mI (5559) example: Sent 102400/1294380 bytes[0m
+[0;32mI (5659) example: Sent 112640/1294380 bytes[0m
+[0;32mI (5709) example: Sent 122880/1294380 bytes[0m
+[0;32mI (5799) example: Sent 133120/1294380 bytes[0m
+[0;32mI (5869) example: Sent 143360/1294380 bytes[0m
+[0;32mI (5939) example: Sent 153600/1294380 bytes[0m
+[0;32mI (5999) example: Sent 163840/1294380 bytes[0m
+[0;32mI (6069) example: Sent 174080/1294380 bytes[0m
+[0;32mI (6129) example: Sent 184320/1294380 bytes[0m
+[0;32mI (6209) example: Sent 194560/1294380 bytes[0m
+[0;32mI (6279) example: Sent 204800/1294380 bytes[0m
+[0;32mI (6369) example: Sent 215040/1294380 bytes[0m
+[0;32mI (6439) example: Sent 225280/1294380 bytes[0m
+[0;32mI (6489) example: Sent 235520/1294380 bytes[0m
+[0;32mI (6549) example: Sent 245760/1294380 bytes[0m
+[0;32mI (6609) example: Sent 256000/1294380 bytes[0m
+[0;32mI (6679) example: Sent 266240/1294380 bytes[0m
+[0;32mI (6729) example: Sent 276480/1294380 bytes[0m
+[0;32mI (6789) example: Sent 286720/1294380 bytes[0m
+[0;32mI (6839) example: Sent 296960/1294380 bytes[0m
+[0;32mI (6899) example: Sent 307200/1294380 bytes[0m
+[0;32mI (6959) example: Sent 317440/1294380 bytes[0m
+[0;32mI (7009) example: Sent 327680/1294380 bytes[0m
+[0;32mI (7079) example: Sent 337920/1294380 bytes[0m
+[0;32mI (7149) example: Sent 348160/1294380 bytes[0m
+[0;32mI (7209) example: Sent 358400/1294380 bytes[0m
+[0;32mI (7259) example: Sent 368640/1294380 bytes[0m
+[0;32mI (7299) example: Sent 378880/1294380 bytes[0m
+[0;32mI (7379) example: Sent 389120/1294380 bytes[0m
+[0;32mI (7439) example: Sent 399360/1294380 bytes[0m
+[0;32mI (7509) example: Sent 409600/1294380 bytes[0m
+[0;32mI (7599) example: Sent 419840/1294380 bytes[0m
+[0;32mI (7649) example: Sent 430080/1294380 bytes[0m
+[0;32mI (7699) example: Sent 440320/1294380 bytes[0m
+[0;32mI (7739) example: Sent 450560/1294380 bytes[0m
+[0;32mI (7799) example: Sent 460800/1294380 bytes[0m
+[0;32mI (7879) example: Sent 471040/1294380 bytes[0m
+[0;32mI (7949) example: Sent 481280/1294380 bytes[0m
+[0;32mI (8019) example: Sent 491520/1294380 bytes[0m
+[0;32mI (8069) example: Sent 501760/1294380 bytes[0m
+[0;32mI (8139) example: Sent 512000/1294380 bytes[0m
+[0;32mI (8209) example: Sent 522240/1294380 bytes[0m
+[0;32mI (8249) example: Sent 532480/1294380 bytes[0m
+[0;32mI (8319) example: Sent 542720/1294380 bytes[0m
+[0;32mI (8389) example: Sent 552960/1294380 bytes[0m
+[0;32mI (8459) example: Sent 563200/1294380 bytes[0m
+[0;32mI (8519) example: Sent 573440/1294380 bytes[0m
+[0;32mI (8589) example: Sent 583680/1294380 bytes[0m
+[0;32mI (8679) example: Sent 593920/1294380 bytes[0m
+[0;32mI (8739) example: Sent 604160/1294380 bytes[0m
+[0;32mI (8809) example: Sent 614400/1294380 bytes[0m
+[0;32mI (8869) example: Sent 624640/1294380 bytes[0m
+[0;32mI (8929) example: Sent 634880/1294380 bytes[0m
+[0;32mI (9029) example: Sent 645120/1294380 bytes[0m
+[0;32mI (9109) example: Sent 655360/1294380 bytes[0m
+[0;32mI (9169) example: Sent 665600/1294380 bytes[0m
+[0;32mI (9259) example: Sent 675840/1294380 bytes[0m
+[0;32mI (9299) example: Sent 686080/1294380 bytes[0m
+[0;32mI (9379) example: Sent 696320/1294380 bytes[0m
+[0;32mI (9439) example: Sent 706560/1294380 bytes[0m
+[0;32mI (9529) example: Sent 716800/1294380 bytes[0m
+[0;32mI (9609) example: Sent 727040/1294380 bytes[0m
+[0;32mI (9669) example: Sent 737280/1294380 bytes[0m
+[0;32mI (9719) example: Sent 747520/1294380 bytes[0m
+[0;32mI (9789) example: Sent 757760/1294380 bytes[0m
+[0;32mI (9859) example: Sent 768000/1294380 bytes[0m
+[0;32mI (9919) example: Sent 778240/1294380 bytes[0m
+[0;32mI (9969) example: Sent 788480/1294380 bytes[0m
+[0;32mI (10039) example: Sent 798720/1294380 bytes[0m
+[0;32mI (10099) example: Sent 808960/1294380 bytes[0m
+[0;32mI (10189) example: Sent 819200/1294380 bytes[0m
+[0;32mI (10279) example: Sent 829440/1294380 bytes[0m
+[0;32mI (10349) example: Sent 839680/1294380 bytes[0m
+[0;32mI (10419) example: Sent 849920/1294380 bytes[0m
+[0;32mI (10509) example: Sent 860160/1294380 bytes[0m
+[0;32mI (10559) example: Sent 870400/1294380 bytes[0m
+[0;32mI (10629) example: Sent 880640/1294380 bytes[0m
+[0;32mI (10689) example: Sent 890880/1294380 bytes[0m
+[0;32mI (10739) example: Sent 901120/1294380 bytes[0m
+[0;32mI (10819) example: Sent 911360/1294380 bytes[0m
+[0;32mI (10859) example: Sent 921600/1294380 bytes[0m
+[0;32mI (10939) example: Sent 931840/1294380 bytes[0m
+[0;32mI (11019) example: Sent 942080/1294380 bytes[0m
+[0;32mI (11089) example: Sent 952320/1294380 bytes[0m
+[0;32mI (11129) example: Sent 962560/1294380 bytes[0m
+[0;32mI (11189) example: Sent 972800/1294380 bytes[0m
+[0;32mI (11229) example: Sent 983040/1294380 bytes[0m
+[0;32mI (11309) example: Sent 993280/1294380 bytes[0m
+[0;32mI (11379) example: Sent 1003520/1294380 bytes[0m
+[0;32mI (11459) example: Sent 1013760/1294380 bytes[0m
+[0;32mI (11529) example: Sent 1024000/1294380 bytes[0m
+[0;32mI (11589) example: Sent 1034240/1294380 bytes[0m
+[0;32mI (11639) example: Sent 1044480/1294380 bytes[0m
+[0;32mI (11679) example: Sent 1054720/1294380 bytes[0m
+[0;32mI (11739) example: Sent 1064960/1294380 bytes[0m
+[0;32mI (11819) example: Sent 1075200/1294380 bytes[0m
+[0;32mI (11879) example: Sent 1085440/1294380 bytes[0m
+[0;32mI (11939) example: Sent 1095680/1294380 bytes[0m
+[0;32mI (11999) example: Sent 1105920/1294380 bytes[0m
+[0;32mI (12059) example: Sent 1116160/1294380 bytes[0m
+[0;32mI (12149) example: Sent 1126400/1294380 bytes[0m
+[0;32mI (12209) example: Sent 1136640/1294380 bytes[0m
+[0;32mI (12269) example: Sent 1146880/1294380 bytes[0m
+[0;32mI (12329) example: Sent 1157120/1294380 bytes[0m
+[0;32mI (12369) example: Sent 1167360/1294380 bytes[0m
+[0;32mI (12459) example: Sent 1177600/1294380 bytes[0m
+[0;32mI (12509) example: Sent 1187840/1294380 bytes[0m
+[0;32mI (12579) example: Sent 1198080/1294380 bytes[0m
+[0;32mI (12659) example: Sent 1208320/1294380 bytes[0m
+[0;32mI (12709) example: Sent 1218560/1294380 bytes[0m
+[0;32mI (12789) example: Sent 1228800/1294380 bytes[0m
+[0;32mI (12859) example: Sent 1239040/1294380 bytes[0m
+[0;32mI (12919) example: Sent 1249280/1294380 bytes[0m
+[0;32mI (12979) example: Sent 1259520/1294380 bytes[0m
+[0;32mI (13089) example: Sent 1269760/1294380 bytes[0m
+[0;32mI (13179) example: Sent 1280000/1294380 bytes[0m
+[0;32mI (13239) example: Sent 1290240/1294380 bytes[0m
+[0;32mI (13279) example: Sent 1294380/1294380 bytes[0m
+[0;33mW (43289) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;32mI (43289) example: HTTP POST Status = -1[0m

@@ -1,0 +1,96 @@
+[1/10] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj
+In file included from C:/Espressif/frameworks/esp-idf-v5.2.5/components/driver/deprecated/driver/i2s.h:23,
+                 from C:/Espressif/Voice_Assistant_AI/main/main.c:14:
+C:/Espressif/frameworks/esp-idf-v5.2.5/components/driver/deprecated/driver/adc.h:19:2: warning: #warning "legacy adc driver is deprecated, please migrate to use esp_adc/adc_oneshot.h and esp_adc/adc_continuous.h for oneshot mode and continuous mode drivers respectively" [-Wcpp]
+   19 | #warning "legacy adc driver is deprecated, please migrate to use esp_adc/adc_oneshot.h and esp_adc/adc_continuous.h for oneshot mode and continuous mode drivers respectively"
+      |  ^~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.2.5/components/driver/deprecated/driver/i2s.h:27:2: warning: #warning "This set of I2S APIs has been deprecated, please include 'driver/i2s_std.h', 'driver/i2s_pdm.h' or 'driver/i2s_tdm.h' instead. if you want to keep using the old APIs and ignore this warning, you can enable 'Suppress leagcy driver deprecated warning' option under 'I2S Configuration' menu in Kconfig" [-Wcpp]
+   27 | #warning "This set of I2S APIs has been deprecated, \
+      |  ^~~~~~~
+[2/10] Linking C static library esp-idf\main\libmain.a
+[3/10] Performing build step for 'bootloader'
+[1/1] C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Espressif\Voice_Assistant_AI\build\bootloader\esp-idf\esptool_py && C:\Espressif\python_env\idf5.2_py3.11_env\Scripts\python.exe C:/Espressif/frameworks/esp-idf-v5.2.5/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 C:/Espressif/Voice_Assistant_AI/build/bootloader/bootloader.bin"
+Bootloader binary size 0x68b0 bytes. 0x750 bytes (7%) free.
+[4/10] No install step for 'bootloader'
+[5/10] Completed 'bootloader'
+[6/10] Generating ld/sections.ld
+[7/10] Linking CXX executable Voice_Assistant_AI.elf
+[8/10] Generating binary image from built executable
+esptool.py v4.8.1
+Creating esp32 image...
+Merged 2 ELF sections
+Successfully created esp32 image.
+Generated C:/Espressif/Voice_Assistant_AI/build/Voice_Assistant_AI.bin
+[9/10] C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Espressif\Voice_Assistant_AI\build\esp-idf\esptool_py && C:\Espressif\python_env\idf5.2_py3.11_env\Scripts\python.exe C:/Espressif/frameworks/esp-idf-v5.2.5/components/partition_table/check_sizes.py --offset 0x8000 partition --type app C:/Espressif/Voice_Assistant_AI/build/partition_table/partition-table.bin C:/Espressif/Voice_Assistant_AI/build/Voice_Assistant_AI.bin"
+Voice_Assistant_AI.bin binary size 0xea220 bytes. Smallest app partition is 0x100000 bytes. 0x15de0 bytes (9%) free.
+[9/10] C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Espressif\frameworks\esp-idf-v5.2.5\components\esptool_py && C:\Espressif\tools\cmake\3.30.2\bin\cmake.exe -D IDF_PATH=C:/Espressif/frameworks/esp-idf-v5.2.5 -D SERIAL_TOOL=C:/Espressif/python_env/idf5.2_py3.11_env/Scripts/python.exe;;C:/Espressif/frameworks/esp-idf-v5.2.5/components/esptool_py/esptool/esptool.py;--chip;esp32 -D SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args -D WORKING_DIRECTORY=C:/Espressif/Voice_Assistant_AI/build -P C:/Espressif/frameworks/esp-idf-v5.2.5/components/esptool_py/run_serial_tool.cmake"
+esptool.py --chip esp32 -p COM7 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 20m --flash_size 2MB 0x1000 bootloader/bootloader.bin 0x10000 Voice_Assistant_AI.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.8.1
+Serial port COM7
+Connecting.....
+Chip is ESP32-D0WD-V3 (revision v3.1)
+Features: WiFi, BT, Dual Core, 240MHz, VRef calibration in efuse, Coding Scheme None
+Crystal is 40MHz
+MAC: 14:2b:2f:c6:47:b4
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00001000 to 0x00007fff...
+Flash will be erased from 0x00010000 to 0x000fafff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+SHA digest in image updated
+Compressed 26800 bytes to 16423...
+Writing at 0x00001000... (50 %)
+Writing at 0x00007892... (100 %)
+Wrote 26800 bytes (16423 compressed) at 0x00001000 in 0.7 seconds (effective 286.3 kbit/s)...
+Hash of data verified.
+Compressed 959008 bytes to 596610...
+Writing at 0x00010000... (2 %)
+Writing at 0x0001d6e7... (5 %)
+Writing at 0x0002872e... (8 %)
+Writing at 0x000325c4... (10 %)
+Writing at 0x0003aa90... (13 %)
+Writing at 0x0004038e... (16 %)
+Writing at 0x00045e70... (18 %)
+Writing at 0x0004b81b... (21 %)
+Writing at 0x00051776... (24 %)
+Writing at 0x0005747f... (27 %)
+Writing at 0x0005d1c8... (29 %)
+Writing at 0x0006313a... (32 %)
+Writing at 0x00068c30... (35 %)
+Writing at 0x0006f0e6... (37 %)
+Writing at 0x00074335... (40 %)
+Writing at 0x000799a1... (43 %)
+Writing at 0x0007ec99... (45 %)
+Writing at 0x0008433d... (48 %)
+Writing at 0x00089987... (51 %)
+Writing at 0x0008f04c... (54 %)
+Writing at 0x000950b7... (56 %)
+Writing at 0x0009aa97... (59 %)
+Writing at 0x000a0825... (62 %)
+Writing at 0x000a64df... (64 %)
+Writing at 0x000abd6e... (67 %)
+Writing at 0x000b17fa... (70 %)
+Writing at 0x000b7593... (72 %)
+Writing at 0x000bda21... (75 %)
+Writing at 0x000c3591... (78 %)
+Writing at 0x000c9008... (81 %)
+Writing at 0x000ce989... (83 %)
+Writing at 0x000d4942... (86 %)
+Writing at 0x000df0ab... (89 %)
+Writing at 0x000e646b... (91 %)
+Writing at 0x000ec3d8... (94 %)
+Writing at 0x000f2926... (97 %)
+Writing at 0x000f7b28... (100 %)
+Wrote 959008 bytes (596610 compressed) at 0x00010000 in 13.9 seconds (effective 552.2 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 103...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (103 compressed) at 0x00008000 in 0.0 seconds (effective 520.0 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...
